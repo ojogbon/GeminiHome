@@ -2,13 +2,14 @@
 
 include "call.php";
 
-//  include "TestimonialFunction.php";
+  include "TestimonialFunction.php";
 
  include ($_SERVER['DOCUMENT_ROOT']."/". $parent_path.'models/Testimonial.php');
 
 
 function doReviewCheck () {
-    
+    echo 999999;
+
     $testimonial = new Testimonial();
 
         if(is_ajax_resquest()){
