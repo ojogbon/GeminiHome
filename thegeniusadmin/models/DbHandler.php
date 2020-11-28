@@ -55,6 +55,8 @@ class DbHandler{
 
 		$statement = $this->db->prepare($sql);
 
+        echo $statement;
+
 		$statement->execute($param);
 
 		$result = $statement->fetchAll(PDO::FETCH_ASSOC);
