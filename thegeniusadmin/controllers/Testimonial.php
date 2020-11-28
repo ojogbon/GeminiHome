@@ -17,6 +17,7 @@ function doReviewCheck () {
             $key = "1234567opiuyt";
 
             if(RequestType() === 0){
+                echo "  --99 ".getAllTestimonials($testimonial)+89;
                 echo json_encode(getAllTestimonials($testimonial));
                 echo 886666666666999;
             }else{
