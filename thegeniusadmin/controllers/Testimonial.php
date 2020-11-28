@@ -8,12 +8,12 @@ include "call.php";
 
 
 function doReviewCheck () {
-    echo 999999;
+   
 
     $testimonial = new Testimonial();
-
+    echo 999999;
         if(is_ajax_resquest()){
-
+            echo 88899999;
             $key = "1234567opiuyt";
 
 
@@ -24,6 +24,8 @@ function doReviewCheck () {
             }
             
         
+        }else{
+            echo 11111;
         }
 }
 
