@@ -2,13 +2,13 @@
     include "call.php";
 
 
-    include ($_SERVER['DOCUMENT_ROOT']. $parent_path.'models/Staff.php');
-    include ($_SERVER['DOCUMENT_ROOT']. $parent_path.'models/Work.php');
-    include ($_SERVER['DOCUMENT_ROOT']. $parent_path.'models/Contact.php');
-    include ($_SERVER['DOCUMENT_ROOT']. $parent_path.'models/Appointment.php');
-    include ($_SERVER['DOCUMENT_ROOT']. $parent_path.'models/Member.php');
-    include ($_SERVER['DOCUMENT_ROOT']. $parent_path.'models/Testimonial.php');
-    include ($_SERVER['DOCUMENT_ROOT']. $parent_path.'models/About.php');
+    include ($_SERVER['DOCUMENT_ROOT']."/". $parent_path.'models/Staff.php');
+    include ($_SERVER['DOCUMENT_ROOT']."/". $parent_path.'models/Work.php');
+    include ($_SERVER['DOCUMENT_ROOT']."/". $parent_path.'models/Contact.php');
+    include ($_SERVER['DOCUMENT_ROOT']."/". $parent_path.'models/Appointment.php');
+    include ($_SERVER['DOCUMENT_ROOT']."/". $parent_path.'models/Member.php');
+    include ($_SERVER['DOCUMENT_ROOT']."/". $parent_path.'models/Testimonial.php');
+    include ($_SERVER['DOCUMENT_ROOT']."/". $parent_path.'models/About.php');
     
 
 

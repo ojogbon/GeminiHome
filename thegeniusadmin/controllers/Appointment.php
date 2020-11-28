@@ -2,7 +2,7 @@
 
 include "call.php";
 
-include ($_SERVER['DOCUMENT_ROOT']. $parent_path.'models/Appointment.php');
+include ($_SERVER['DOCUMENT_ROOT']."/". $parent_path.'models/Appointment.php');
 
 
 

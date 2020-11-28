@@ -4,7 +4,7 @@ include "call.php";
 
 include "AboutFunction.php";
 
-include ($_SERVER['DOCUMENT_ROOT']. $parent_path.'models/About.php');
+include ($_SERVER['DOCUMENT_ROOT']."/". $parent_path.'models/About.php');
 
 
 function doAboutCheck () {

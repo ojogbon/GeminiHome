@@ -4,7 +4,7 @@ include "call.php";
 
 // include "WorkFunction.php";
 
-include ($_SERVER['DOCUMENT_ROOT']. $parent_path.'models/Work.php');
+include ($_SERVER['DOCUMENT_ROOT']."/". $parent_path.'models/Work.php');
 
 
 function doWorkCheck () {
