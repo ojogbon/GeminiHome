@@ -2,7 +2,7 @@
 
 include "call.php";
 
-include "TestimonialFunction.php";
+// include "TestimonialFunction.php";
 
 include ($_SERVER['DOCUMENT_ROOT']. $parent_path.'models/Testimonial.php');
 
