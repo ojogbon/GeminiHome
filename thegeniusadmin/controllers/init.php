@@ -7,9 +7,8 @@ session_start();
 $dev_path = "pro";
 $companyname = "AremoGemini";
 
-$parent_path = $dev_path == "dev" ? "/GeminiHome/thegeniusadmin/" : "/app/thegeniusadmin/";
+$parent_path = $dev_path == "dev" ? "/GeminiHome/thegeniusadmin/" : "/thegeniusadmin/";
 
-echo $_SERVER['DOCUMENT_ROOT'];
 
-    // include ($_SERVER['DOCUMENT_ROOT']. $parent_path.'models/MainModel.php');
-    // $mainModel = new MainModel();
+    include ($_SERVER['DOCUMENT_ROOT']. $parent_path.'models/MainModel.php');
+    $mainModel = new MainModel();
