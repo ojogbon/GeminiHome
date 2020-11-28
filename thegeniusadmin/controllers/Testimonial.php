@@ -35,7 +35,6 @@ function doReviewCheck () {
 
 
 function getAllTestimonials ($testimonial){
-            echo 56556555665;
         return $testimonial->getAllTestimonial();
 }
   doReviewCheck ();
