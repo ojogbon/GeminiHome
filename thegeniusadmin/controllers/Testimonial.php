@@ -11,14 +11,12 @@ function doReviewCheck () {
    
 
     $testimonial = new Testimonial();
-    echo 999999;
+    
         if(!is_ajax_resquest()){
            
             $key = "1234567opiuyt";
 
-            echo RequestType() ;
             if(RequestType() === 0){
-                echo 777777777999;
                 echo json_encode(getAllTestimonials($testimonial));
                 echo 886666666666999;
             }else{
@@ -36,6 +34,7 @@ function doReviewCheck () {
 
 
 function getAllTestimonials ($testimonial){
+            echo 56556555665;
         return $testimonial->getAllTestimonial();
 }
   doReviewCheck ();
