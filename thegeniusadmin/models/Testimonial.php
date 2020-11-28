@@ -33,7 +33,7 @@ public function getAllTestimonial()
         $sql = "select * from testimonial_tbl";
           echo 6454;
         $result = $this->db->getAll($sql);
-        echo 77655
+        echo 77655;
             return $result;
     }
 
