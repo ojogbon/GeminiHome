@@ -5,7 +5,7 @@
  * 
 */
 
-import {Useable} from "./functions";
+import {Useable} from "./functions.js";
 
 
 

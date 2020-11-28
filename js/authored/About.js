@@ -5,7 +5,7 @@
  * 
 */
 
-import {Useable} from "./functions";
+import {Useable} from "./functions.js";
 
 /***
  *  @author ojogbon 11:29pm, 11-23-2020
