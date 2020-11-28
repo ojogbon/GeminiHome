@@ -12,7 +12,7 @@ function doReviewCheck () {
 
     $testimonial = new Testimonial();
     echo 999999;
-        if(is_ajax_resquest()){
+        if(!is_ajax_resquest()){
             echo 88899999;
             $key = "1234567opiuyt";
 
