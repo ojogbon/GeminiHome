@@ -4,7 +4,7 @@ include "call.php";
 
 // include "TestimonialFunction.php";
 
-include ($_SERVER['DOCUMENT_ROOT']. $parent_path.'models/Testimonial.php');
+// include ($_SERVER['DOCUMENT_ROOT']. $parent_path.'models/Testimonial.php');
 
 
 function doReviewCheck () {
@@ -32,4 +32,4 @@ function doReviewCheck () {
 function getAllTestimonials ($testimonial){
         return $testimonial->getAllTestimonial();
 }
- doReviewCheck ();
+//  doReviewCheck ();
