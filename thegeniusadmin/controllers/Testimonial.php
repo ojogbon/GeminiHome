@@ -19,7 +19,7 @@ function doReviewCheck () {
             if(RequestType() === 0){
                 echo 88;
                 echo json_encode(getAllTestimonials($testimonial));
-               echo 88;
+               echo 998;
             }else{
 
             }
