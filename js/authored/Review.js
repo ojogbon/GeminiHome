@@ -27,7 +27,7 @@ class Review {
         if (xhr.readyState == 4 && xhr.status == 200) {
             
             if (xhr.responseText) {
-              console.log(99999999999999999999999999)
+              console.log(9999999)
                 console.log(xhr.responseText);
                 let response = JSON.parse(xhr.responseText);
                 
