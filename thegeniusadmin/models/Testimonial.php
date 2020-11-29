@@ -32,6 +32,7 @@ public function getAllTestimonial()
     {
         $sql = "select * from testimonial_tbl";
           
+        echo $sql;
         $result = $this->db->getAll($sql);
       
             return $result;
