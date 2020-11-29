@@ -55,9 +55,6 @@ class DbHandler{
 
 		$statement = $this->db->prepare($sql);
 
-
-        echo $statement+" -- 9999";
-
 		$statement->execute($param);
 
 		$result = $statement->fetchAll(PDO::FETCH_ASSOC);

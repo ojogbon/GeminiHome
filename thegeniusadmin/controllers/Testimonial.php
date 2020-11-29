@@ -17,9 +17,7 @@ function doReviewCheck () {
             $key = "1234567opiuyt";
 
             if(RequestType() === 0){
-                echo 88;
-                 json_encode(getAllTestimonials($testimonial));
-               echo 998;
+                echo json_encode(getAllTestimonials($testimonial));
             }else{
 
             }
