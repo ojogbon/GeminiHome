@@ -30,7 +30,7 @@ public function saveTestimonial($table,$values)
 
 public function getAllTestimonial()
     {
-        $sql = "select * from heroku_21f298b1c8df782.testimonial_tbl";
+        $sql = "select * from testimonial_tbl";
           
         
         $result = $this->db->getAll($sql);
