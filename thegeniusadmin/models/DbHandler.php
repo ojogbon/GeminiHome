@@ -53,7 +53,7 @@ class DbHandler{
      */
 	public  function getAll($sql,$param = NULL){
 
-        echo $sql; 
+        echo $sql+" ---"; 
 
 		$statement = $this->db->prepare($sql);
 
