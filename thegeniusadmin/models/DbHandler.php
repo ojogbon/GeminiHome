@@ -53,9 +53,11 @@ class DbHandler{
      */
 	public  function getAll($sql,$param = NULL){
 
+        echo 1000; 
+
 		$statement = $this->db->prepare($sql);
 
-        echo $statement;
+        echo $statement+" -- 9999";
 
 		$statement->execute($param);
 
