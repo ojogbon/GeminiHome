@@ -53,7 +53,7 @@ class DbHandler{
      */
 	public  function getAll($sql,$param = NULL){
 
-        $f = explode($sql,' ');
+        $f = explode("1",$sql);
         print_r($f);
 		$statement = $this->db->prepare($sql);
 
