@@ -11,5 +11,4 @@ $parent_path = $dev_path == "dev" ? "GeminiHome/thegeniusadmin/" : "thegeniusadm
 
 
      include ($_SERVER['DOCUMENT_ROOT']."/". $parent_path.'models/MainModel.php');
-     echo $_SERVER['DOCUMENT_ROOT']."/". $parent_path.'models/MainModel.php';
      $mainModel = new MainModel();
