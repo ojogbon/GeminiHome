@@ -28,6 +28,7 @@ function doWorkCheck () {
 }
 
 function getAllWorks ($work){
-    return $work->getAllWork();
+    return "1322312312312";
+   // return $work->getAllWork();
 }
 doWorkCheck ();
