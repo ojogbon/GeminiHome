@@ -10,8 +10,8 @@ include "call.php";
 function doReviewCheck () {
    
 
-  echo "this is Testimonial loading";
-     $testimonial = new Testimonial();
+   $testimonial = new Testimonial();
+   echo "this is Testimonial loading";
   
     //         $key = "1234567opiuyt";
 

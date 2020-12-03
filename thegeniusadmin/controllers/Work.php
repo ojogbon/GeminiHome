@@ -9,10 +9,9 @@ include ($_SERVER['DOCUMENT_ROOT']."/". $parent_path.'models/Work.php');
 
 function doWorkCheck () {
 
-    echo "this is work loading";
-    
      $work = new Work();
-
+     echo "this is work loading";
+    
     //     if(is_ajax_resquest()){
 
     //         $key = "1234567opiuyt";
