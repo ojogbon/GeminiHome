@@ -4,7 +4,7 @@ use http\Client;
 
 session_start();
 
-$dev_path = "pro";
+$dev_path = "dev";
 $companyname = "AremoGemini";
 
 $parent_path = $dev_path == "dev" ? "GeminiHome/thegeniusadmin/" : "thegeniusadmin/";

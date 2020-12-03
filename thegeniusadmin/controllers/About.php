@@ -19,7 +19,7 @@ function doAboutCheck () {
             if(RequestType() === 0){
                 echo json_encode(getAllAbouts($about));
             }else{
-                    echo 5;
+                
             }
             
         }
