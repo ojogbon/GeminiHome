@@ -11,14 +11,16 @@ function doReviewCheck () {
    
 
    $testimonial = new Testimonial();
-   echo "this is Testimonial loading";
+
   
              $key = "1234567opiuyt";
 
              if(RequestType() === 0){
+              echo "this is Testimonial loading";
+              echo "koko koko koko";
                  echo json_encode(getAllTestimonials($testimonial));
     //         // }else{
-        echo "koko koko koko";
+
      }
             
         
