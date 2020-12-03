@@ -17,11 +17,11 @@ function doWorkCheck () {
              $key = "1234567opiuyt";
             echo $key;
 
-    //         if(RequestType() === 0){
-    //             echo json_encode(getAllWorks($work));
+             if(RequestType() === 0){
+                 echo json_encode(getAllWorks($work));
     //         }else{
     //                 echo 5;
-    //         }
+             }
             
         
          }
