@@ -61,7 +61,7 @@ class Work {
 
       doGetAllReviews (){
         console.log(767);
-        this.fetchAllDocuments("./thegeniusadmin/controllers/hope.php");
+        this.fetchAllDocuments("./thegeniusadmin/controllers/Work.php");
       }
 
       actionListeners () {    
