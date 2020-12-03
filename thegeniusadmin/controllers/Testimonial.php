@@ -10,15 +10,16 @@ include "call.php";
 function doReviewCheck () {
    
 
-    $testimonial = new Testimonial();
+  echo "this is Testimonial loading";
+    // $testimonial = new Testimonial();
   
-            $key = "1234567opiuyt";
+    //         $key = "1234567opiuyt";
 
-            // if(RequestType() === 0){
-                echo json_encode(getAllTestimonials($testimonial));
-            // }else{
+    //         // if(RequestType() === 0){
+    //             echo json_encode(getAllTestimonials($testimonial));
+    //         // }else{
 
-            // }
+    //         // }
             
         
        
@@ -30,4 +31,4 @@ function doReviewCheck () {
 function getAllTestimonials ($testimonial){
         return $testimonial->getAllTestimonial();
 }
- // doReviewCheck ();
+  doReviewCheck ();
