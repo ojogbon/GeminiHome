@@ -1,4 +1,6 @@
 <?php
-    include "init.php";
+    //include "init.php";
 
-    //include "util.php";
+    include "util.php";
+
+    
