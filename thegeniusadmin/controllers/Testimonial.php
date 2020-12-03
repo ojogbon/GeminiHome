@@ -31,6 +31,7 @@ function doReviewCheck () {
 
 
 function getAllTestimonials ($testimonial){
+      echo "whaaaaaaaaaaaaaaaaaaaaaaaaaaaaat!";
         return $testimonial->getAllTestimonial();
 }
   doReviewCheck ();
