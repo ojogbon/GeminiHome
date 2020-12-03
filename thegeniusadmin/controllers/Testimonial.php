@@ -13,13 +13,13 @@ function doReviewCheck () {
    $testimonial = new Testimonial();
    echo "this is Testimonial loading";
   
-    //         $key = "1234567opiuyt";
+             $key = "1234567opiuyt";
 
-    //         // if(RequestType() === 0){
+             if(RequestType() === 0){
     //             echo json_encode(getAllTestimonials($testimonial));
     //         // }else{
-
-    //         // }
+        echo "koko koko koko";
+     }
             
         
        
