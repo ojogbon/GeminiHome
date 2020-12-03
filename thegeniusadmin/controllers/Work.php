@@ -29,4 +29,4 @@ function doWorkCheck () {
 function getAllWorks ($work){
     return $work->getAllWork();
 }
-doWorkCheck ();
+//doWorkCheck ();

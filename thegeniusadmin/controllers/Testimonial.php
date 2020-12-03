@@ -30,4 +30,4 @@ function doReviewCheck () {
 function getAllTestimonials ($testimonial){
         return $testimonial->getAllTestimonial();
 }
-  doReviewCheck ();
+ // doReviewCheck ();
