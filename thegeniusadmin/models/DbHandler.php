@@ -53,10 +53,11 @@ class DbHandler{
      */
 	public  function getAll($sql,$param = NULL){
 
-		$statement = $this->db->prepare($sql);
-            echo "thissssssssssssssssssssssss!";
+        $statement = $this->db->prepare($sql);
+        
+        echo $sql; 
+
 		$statement->execute($param);
-        echo "haaaaaaaaaaaaaaaaaa!";
 		$result = $statement->fetchAll(PDO::FETCH_ASSOC);
         /**
          * close cursor it this is a transaction statement
