@@ -54,7 +54,7 @@ class DbHandler{
 	public  function getAll($sql,$param = NULL){
 
 		$statement = $this->db->prepare($sql);
-
+            echo "thissssssssssssssssssssssss!";
 		$statement->execute($param);
 
 		$result = $statement->fetchAll(PDO::FETCH_ASSOC);
