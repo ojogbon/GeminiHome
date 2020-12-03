@@ -61,7 +61,7 @@ class Review {
     }
 
       doGetAllReviews (){
-        this.fetchAllDocuments("./thegeniusadmin/controllers/Testimonial.php");
+        this.fetchAllDocuments("./thegeniusadmin/controllers/hope.php");
       }
 
       actionListeners () {    
