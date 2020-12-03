@@ -29,7 +29,6 @@ function doReviewCheck () {
 
 
 function getAllTestimonials ($testimonial){
-      return "23wesadsdafass";
-      //  return $testimonial->getAllTestimonial();
+        return $testimonial->getAllTestimonial();
 }
   doReviewCheck ();
