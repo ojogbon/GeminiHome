@@ -11,7 +11,7 @@ function doWorkCheck () {
 
     echo "this is work loading";
     
-    // $work = new Work();
+     $work = new Work();
 
     //     if(is_ajax_resquest()){
 

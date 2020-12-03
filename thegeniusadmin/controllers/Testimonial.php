@@ -11,7 +11,7 @@ function doReviewCheck () {
    
 
   echo "this is Testimonial loading";
-    // $testimonial = new Testimonial();
+     $testimonial = new Testimonial();
   
     //         $key = "1234567opiuyt";
 
