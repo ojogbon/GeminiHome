@@ -134,7 +134,7 @@ function loginStaff ($staff,$key, $staff_email,$staff_password){
                     if(count($staff_Online) > 0){
                           $_SESSION["staff_Online_fullName"] = $staff_Online[0]["firstname"] . " ".$staff_Online[0]["lastname"] ;
                           $_SESSION["staff_Online_id"] = $staff_Online[0]["id"];
-                          echo "<script> location.replace('dashboard.php');</script>";
+                          echo "<script> location.replace('Dashboard.php');</script>";
 
                     }else{
                         echo "<div class='alert alert-danger'><b>No User found for this details!</b>   Please try again</div>";
