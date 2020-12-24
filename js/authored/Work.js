@@ -29,7 +29,6 @@ class Work {
             if (xhr.responseText) {
                 let response = JSON.parse(xhr.responseText);
                 
-                console.log(response);
                 response.forEach(element => {
 
                    let  vat = `
@@ -60,7 +59,6 @@ class Work {
     }
 
       doGetAllReviews (){
-        console.log(767);
         this.fetchAllDocuments("./thegeniusadmin/controllers/Work.php");
       }
 
