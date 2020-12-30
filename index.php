@@ -37,10 +37,10 @@
           	<div class="icon">
           		<a href="index.php" class="logo">
           			<span class="flaticon-flower"></span>
-          			<h1>Aremo</h1>
+          			<h1></h1>
           		</a>
           	</div>
-            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Gemini, Balogun</h1>
+            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Aremo Gemini Balogun</h1>
 
             <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="work.php" class="btn btn-white btn-outline-white px-4 py-3">View Our Art</a></p>
           </div>
@@ -60,7 +60,7 @@
             <div class="media d-block text-center block-6 services">
               <div class="icon d-flex mb-3"><span class="flaticon-facial-treatment"></span></div>
               <div class="media-body">
-                <h3 class="heading">Spoken works</h3>
+                <h3 class="heading">Spoken Words</h3>
                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
               </div>
             </div>
@@ -102,7 +102,7 @@
       </div>
     </section>
 
-		<section class="ftco-section ftco-discount img" style="background-image: url(images/bg_2.jpg);">
+		<section class="ftco-section ftco-discount img" style="background-image: url(images/talk.JPG);">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row justify-content-end">
@@ -163,7 +163,7 @@
 
 
 
-		<section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/bg_4.jpg);">
+		<section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/words.jpg);">
 			<div class="overlay"></div>
       <div class="container">
         <div class="row justify-content-center">

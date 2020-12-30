@@ -56,8 +56,36 @@
     	<div class="container">
     		<div class="row d-flex about-all-for-it">
     		
-    		</div>
-    	</div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row ">
+    		    <div class="col-md-6">
+              <article>
+                  <h2>BRIEF BIOGRAPHY</h2>
+                  <p>A force to be reckoned with in the performance poetry scene, Aremo Gemini brings freshness to African traditional folklore by engaging modern and reparable narratives within the form of bards.
+
+                  Yusuf Alabi Balogun, going by the stage name 'Aremo Gemini' is a page and performance poet, storyteller, playwright, movie critic and troubadour with a rebellious divergence to his art. </p>
+                  <p>Recipient of Horn of Afroclassical Merit Award for excellence in the propagation of arts and culture (2018), his art is guided by so many drives, one of which is to sell out O² Arena, London for Yoruba oral arts. He is the curator of an annual Yoruba oral arts festival 'Kengbe Oro', fast-growing into a cultural renaissance; a show which has been successfully sold out twice since the inception in 2019 (Ethnic Heritage Centre; Terra Kulture, respectively). 
+
+                    He has graced stages ranging from Felabration to Lagos Book and Arts Festival, Cafe One (Sterling Bank), Eniobanke Music Festival, Unleashed With Temmie Ovwasa, FUNAAB's Ankara Day, Seun Awobajo's FODAF, Dare 2 Dream 5 with Kinabuti, Unknot The Tie With OmoBaba, Global Poetry Festival (Shared Studios) among numerous others.
+
+                    To his credits are numerous contents like Lagidigba, Ada Oloro, Irawe, Agbe, Iya Mi Osoronga among others including a foremost collaboration with Willemien Rust (Afrikaans) on Beginnes & Eindes, exploring alternate tongues and the industriousness of Yoruba language. Gemini thinks he is on a time travel and hence, every of his contents is to him, a recount of his first life and as well, unspoken, deathless truths.
+
+                    Reckoned as a slam streak ranging from Askifa Inaugural Poetry Slam to Wordaholics Poetry Slam 2.0, Obalende Inaugural Poetry Slam, the first runner up of SoS Poetry Slam 3.0 and more so, the first Runner Up for Grooming Talent Hunt 2020. Former publicity officer for Poets in Nigeria, his craft have received successful acceptance and validation from media houses within Nigeria and outside the shore, including BBC Yoruba and The Folio Media (Nigerian exclusive affiliate to CNN). He is the author of a poetry collection —</p>
+                    <p>'Olajumoke's Lullaby' and  a subjective memoir on Temmie Ovwasa — Atoke's Shades Of A Rebel. His life and craft was recently documented by Berlin visual artiste — Dirk Skiba. He has equally created movie trailer ads,
+                    devising Yoruba poetry as a craft for acclaimed filmmakers like Kenny George and Wunmi Olabimtan, among several others.</p>
+              </article>
+            </div>
+
+            <div class="col-md-6">
+              <img src="./images/me.jpg" alt="loading..">
+            </div>
+        </div>
+       
     </section>
 
     <section class="ftco-section bg-light">
