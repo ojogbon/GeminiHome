@@ -104,8 +104,8 @@
           </div>
         </div>
       </section>
-
-      <div id="map"></div>
+<!-- 
+      <div id="map"></div> -->
 
       <?php
         include './includes/foot.php';

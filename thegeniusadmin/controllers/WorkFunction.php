@@ -17,30 +17,59 @@
  * @param $price
  ***/
 
-function insertWork($work,$key, $WorkTitle,$WorkDescription,$WorkImage,$staff_id){
+function insertWork($work,$key, $WorkTitle,$WorkDescription,$WorkImage,$staff_id,$fileName){
 
     if ($key == "1234567opiuyt") {
 
-        if (isEmpty([$WorkTitle,$WorkDescription,$WorkImage,$staff_id])){
+        if (isEmpty([$WorkTitle,$WorkDescription,$WorkImage,$staff_id,$fileName])){
             echo "<div class='alert alert-danger'><b>Fields can't be empty!</b>   Please fill and try again</div>";
         }else{
-                $uploaded = uploadImage ($WorkImage,"./loadedImage/");
-              if ( $uploaded[0] !== "TRUE" ){
-                        echo $uploaded;
-              }else{
-                  $added = addslashes($WorkDescription);
-                    if($work->saveWork(" `work_tbl`(`id`, `staff_id`, `title`, `content`, `upload`, `path`, `date`, `status`, `delete`)",
-                        "VALUES (null,'$staff_id','$WorkTitle','$added','$uploaded[1]','$uploaded[2]'
-                        ,now(),'0','0')")){
-    
-                            echo "<div class='alert alert-success'><b> Congratulations!</b>  Work registered successfully</div>";
-                    }else{
-    
-                           echo "<div class='alert alert-danger'><b> We are very Sorry, Something happened! </b>   Please try again</div>";
-                    }
-                
 
-              }
+                if($WorkImage === "video" || $WorkImage === "audio"){
+
+                        $links = $_POST[$fileName];
+
+                        if(isEmpty([$links])){
+                            echo "<div class='alert alert-danger'><b>Link Field can't be empty!</b>   Please fill and try again</div>";
+                        }else {
+                            # code...
+                            $added = addslashes($WorkDescription);
+                            if($work->saveWork(" `work_tbl`(`id`, `staff_id`, `title`, `content`, `upload`, `path`, `date`, `status`, `delete`,`type`)",
+                                "VALUES (null,'$staff_id','$WorkTitle','$added','$links',''
+                                ,now(),'0','0','$WorkImage')")){
+            
+                                    echo "<div class='alert alert-success'><b> Congratulations!</b>  Work registered successfully</div>";
+                            }else{
+            
+                                   echo "<div class='alert alert-danger'><b> We are very Sorry, Something happened! </b>   Please try again</div>";
+                            }
+                        }
+
+                
+                
+                }else {
+                    # code...
+                    $uploaded = uploadImage ($fileName,"./loadedImage/");
+                    if ( $uploaded[0] !== "TRUE" ){
+                              echo $uploaded;
+                    }else{
+      
+                        $added = addslashes($WorkDescription);
+                          if($work->saveWork(" `work_tbl`(`id`, `staff_id`, `title`, `content`, `upload`, `path`, `date`, `status`, `delete`,`type`)",
+                              "VALUES (null,'$staff_id','$WorkTitle','$added','$uploaded[1]','$uploaded[2]'
+                              ,now(),'0','0','$WorkImage')")){
+          
+                                  echo "<div class='alert alert-success'><b> Congratulations!</b>  Work registered successfully</div>";
+                          }else{
+          
+                                 echo "<div class='alert alert-danger'><b> We are very Sorry, Something happened! </b>   Please try again</div>";
+                          }
+                      
+      
+                    }
+                }
+
+          
               
          
         }

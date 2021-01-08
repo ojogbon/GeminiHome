@@ -29,21 +29,37 @@ class Work {
             if (xhr.responseText) {
                 let response = JSON.parse(xhr.responseText);
                 
+                
+
                 response.forEach(element => {
+
+                   let workContent = '';
+
+                   if(element.type === 'audio'){
+                       workContent = `  <audio controls>
+                       <source src="${element.upload}" type="audio/mpeg">
+                     Your browser does not support the audio element.
+                     </audio>`;
+                   }else if (element.type === 'video'){
+                       workContent = element.upload;
+                   }else{
+                      workContent = `<img src="./thegeniusadmin/loadedImage/${element.upload}" 
+                      class="img-fluid" alt="Loading...">`;
+                   }
 
                    let  vat = `
                    <div class="col-md-4 ftco-animate fadeInUp ftco-animated">
-                   <a href="#" class="work-entry">
-                     <img src="./thegeniusadmin/loadedImage/${element.upload}" class="img-fluid" alt="Loading...">
+                   
+                          ${workContent}
                      <div class="info d-flex align-items-center">
                        <div>
                          <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                           <span class="icon-search"></span>
+                        
                          </div>
-                         <h3>${element.title}</h3>
+                         <h5>${element.title}</h5>
                        </div>
                      </div>
-                   </a>
+                  
                  </div>
                         `;
 

@@ -97,7 +97,28 @@ include 'header.php';?>
                                                 <th scope="row"><?php echo $count;?></th>
                                                 <td><?php echo $listOfWork[$Works]["title"];?></td>
                                                 <td><?php echo $listOfWork[$Works]["content"];?></td>
-                                                <td><img style="width:20em" src="<?php echo "./loadedImage/".$listOfWork[$Works]["upload"];?>" alt="Work..."/></td>
+                                                <td>
+                                                  <?php 
+                                                        if($listOfWork[$Works]["type"] === 'audio'){
+                                                            ?>
+                                                            
+                                                               <audio controls>
+                                                                <source src="<?php echo $listOfWork[$Works]["upload"]?>" type="audio/mpeg">
+                                                              Your browser does not support the audio element.
+                                                              </audio>
+
+                                                              <?php 
+                                                            }else if ($listOfWork[$Works]["type"] === 'video'){
+                                                                echo $listOfWork[$Works]["upload"] ;
+                                                            }else{
+                                                                ?>
+                                                                     <img style="width:20em" src="<?php echo "./loadedImage/".$listOfWork[$Works]["upload"];?>" alt="Work..."/>
+                                                                <?php
+                                                               
+                                                            }
+                                                  ?>
+                                               
+                                                </td>
                                                 <td><?php echo $listOfWork[$Works]["date"];?></td>
                                             </tr>
                                             <?php

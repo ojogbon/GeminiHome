@@ -88,19 +88,41 @@ include 'header.php';?>
                                                 <input type="text" name="propertyTitle" class="form-control input-default " placeholder="Work Title" required>
                                             </div>
 
-                                            <div class="form-group">
-                                                <p>Work Image </p>
-                                                <input type="file" name="file" class="form-control input-default " required>
+                                            <div class="form-group ">
+                                                <p>Work Type </p>
+                                                <select  name="workType" class="form-control input-default workTypeIt"  required>
+                                                    <option value="">Select type</option>
+                                                    <option value="image">Image</option>
+                                                    <option value="audio">Audio</option>
+                                                    <option value="video">Video</option>
+                                                </select>
                                             </div>
+
+                                        <div class="decide-frame">
+                                      
+                                        </div>
+
 								<button type="submit" name="add_staff" class="btn btn-primary btn-flat m-b-30 m-t-30">Add Work</button>
                                         </form>
                                         <?php
                                                     			 if(isset($_POST["add_staff"])){
                                                                     $WorkDescription = $_POST["WorkDescription"];
                                                                     $propertyTitle = $_POST["propertyTitle"];
+                                                                    $workType = $_POST["workType"];
                                                                     
+                                                                    $fileUpload = "";
+
+                                                                    if($workType === "image"){
+                                                                        $fileUpload = $workType;
+                                                                    }elseif($workType === "audio" || $workType === "video"){
+                                                                        $fileUpload = $workType;
+                                                                    }else {
+                                                                        # code...
+                                                                        $fileUpload = "file";
+                                                                    }
+
                                                                     $key = "1234567opiuyt";
-                                                                    insertWork($work,$key, $propertyTitle,$WorkDescription,"file",$staff_id);
+                                                                    insertWork($work,$key, $propertyTitle,$WorkDescription,$fileUpload,$staff_id,"file");
 
                                                                     }
                                                     ?>
@@ -128,7 +150,31 @@ include 'header.php';?>
     <script src="assets/js/lib/mmc-chat.js"></script>
     <script src="assets/js/scripts.js"></script><!-- scripit init-->
 
+<script>
+    document.querySelector(".workTypeIt").addEventListener("click",eve =>{
+       let selectedType = document.querySelector(".workTypeIt").selectedOptions[0].value;
+        var image = `<div class="form-group image-frame">
+                                                <p>Work Image </p>
+                                                <input type="file" name="file" class="form-control input-default " required>
+                                            </div>`;
+        var link = ` <div class="form-group  link-frame">
+                                                <p>Audio/video Link</p>
+                                                <input type="text" name="file" class="form-control input-default " required>
+                                            </div>`;   
+                                            
+          var decide = '';
 
+          if(selectedType === 'image'){
+                console.log(22222);
+                decide = image;
+          }else if(selectedType === 'audio' || 'video'){
+            console.log(3333);
+            decide = link;
+          }
+          document.querySelector(".decide-frame").innerHTML = decide; 
+   
+    });
+</script>
 
 
 
